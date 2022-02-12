@@ -1,13 +1,14 @@
 import React from 'react';
 
 function SearchBar ({
-    onChangeInput,
-    onChangeCheck
+    handleInput,
+    handleCheckBox
 }) {
   return <div>
       <label>Search</label>
-      <input type="text" onChange={(e)=>{onChangeInput(e)}}/>
-      <p><input type="checkbox" onChange={(e)=>{onChangeCheck(e)}}/> Only show products in stock</p>
+      <input type="text" onChange={handleInput}/>
+      <p><input type="checkbox" 
+      onChange={handleCheckBox}/> Only show products in stock</p>
   </div>;
 };
 
